@@ -46,6 +46,12 @@
         $info['idade'] = 18;
 
         echo "Meu nome completo é ".$info['nome']." ".$info['sobrenome']." "." e eu tenho ".$info["idade"]." anos";
+
+        # Arrays Multidimensionais (Matrizes)
+
+        $array = [[10, 11], [12, 13]];
+
+        echo $array[0][1]; // 11
     ?>
     
 
