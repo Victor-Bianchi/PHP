@@ -1,0 +1,25 @@
+OPERADORES E REGRAS DE PRECEDÊNCIA
+
+A ordem de precedência de cálculos do PHP é simples, sempre é lido da esquerda para direita sempre tendo a multiplicação, divisão, exponenciação como prioridade sobre a soma e subtração.
+
+Os parênteses são os seres supremos nos cálculos, pois ao colocarmos ele em uma expressão tudo o que estiver dentro dele será calculado primeiro antes de qualquer outro cálculo.
+
+1-) Parênteses
+2-) Exponenciação
+3-) Multiplicação, Divisão e porcentagem
+4-) Soma e subtração
+
+================================================
+
+FUNÇÕES MATEMÁTICAS
+
+A função abs() retorna o valor absoluto de um valor passado.
+A função base_convert() converte um número passado para uma outra base, sendo octal, hexadecimal e entre outras, a sintaxe é base_convert($number numero, $number baseAntiga, $number baseNova)
+A função ceil(), floor() e round() trazem funções de arredondamento.
+A função hypot() calcula a hipotenusa
+A função intdiv() faz uma divisão inteira
+A função min() mostra o valor mínimo de uma sequência, já a função max() retorna o maior
+A função pi() retorna o valor de pi (semelhante a constante interna M_PI)
+A função pow() faz o cálculo de uma potência
+A função sin(), cos() e tan() retorna os cálculos dos valores de seno, cosseno e tangente
+A função sqrt() retorna o valor da raiz quadrada de um determinado número

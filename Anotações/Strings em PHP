@@ -1,0 +1,35 @@
+- Double Quoted (JS Backticks)
+- Single Quoted
+- Heredoc
+- Nowdoc
+
+DOUBLE QUOTED
+	Aspas duplas, " ", "String em PHP"
+	Representação de conteúdo (caractere de escape)
+	Interpolação de variáveis
+
+SINGLE QUOTED
+	Aspas únicas, ' ', 'String em PHP'
+	Sem representação de conteúdo (caractere de escape)
+	Sem Interpolação de variáveis
+	
+HEREDOC
+	String de múltiplas linhas, semelhante a uma String de Double Quoted
+	Sintaxe: echo <<< FRASE alguma coisa nessa string FRASE;
+	Não pode ser feito utilizando saída HTML, somente Textarea
+
+NOWDOC
+	String de múltiplas linhas, semelhante a uma String de Single Quoted
+	Sintaxe: echo <<< 'FRASE' alguma coisa nessa string FRASE;
+
+===============================================================================================	
+
+-- Operador de concatenação ("."), ponto
+-- "\u{1F418}" caractere de escape
+-- Single Quoted: Strings literais
+-- Double Quoted: Strigns Inteligentes
+-- Constantes não tem interpolação
+-- Sequência de Escape: "Eu sou muito \"Legal\" mesmo!"
+-- SE: \n (Nova linha), \t (Tabulação Horizontal), \\ (Barra invertida), \$ (Sinal de Cifrão), \u{} (Uso de caracteres Unicode)
+
+===============================================================================================

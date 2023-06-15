@@ -1,0 +1,29 @@
+escalares
+	- String
+	- Integer
+	- Double, Float ou Real (legado)
+	- Boolean
+	
+	- 0x1A, todo número começado com "0x" é considerado número hexadecimal pelo PHP
+	- 0bxx, todo número começado com "0b" é considerado número binário pelo PHP
+	- 3e2, esse é 3 * 10², mas, todo número em potência é considerado double/float pelo PHP
+compostos
+	- Array
+	- Object
+especiais
+	- Null
+	- Resource
+	- Callabe
+	- Mixed
+
+===============================================================================================
+
+var_dump(mixed $var) é uma variável que imprime na tela todas as informações que o PHP tiver a respeito dessa variável, incluindo o seu tipo primitivo.
+
+$numeroFloat = (int) 3e2 # dessa forma forçamos com coerção que a variável seja integer.$numeroFloat_2 = (integer) 5e3
+
+-- real não existe mais, desde o PHP 7.4
+
+O valor boolean pro PHP para falso é vazio e verdadeiro é 1
+
+===============================================================================================

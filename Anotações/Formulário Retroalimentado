@@ -1,0 +1,5 @@
+Podemos criar, em um arquivo separado, um formulário e passar valores via GET ou POST através do action do formulário. Os formulários retroalimentados são formulários que mandam dados para o próprio arquivo.
+
+Para fazer isso, basta colocarmos o endereço do próprio arquivo dentro do action do formulário, mas, por motivos de segurança, não podemos simplesmente colocar o nome do arquivo em si dentro do action, mas podemos usar a seguinte sintaxe por segurança: <?php echo $_SERVER['PHP_SELF'] ?>
+
+Ou podemos simplificar por: <?= $_SERVER['PHP_SELF'] ?>

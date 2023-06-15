@@ -1,0 +1,20 @@
+Superglobais nada mais são do que variáveis criadas pelo próprio PHP que estão disponíveis dentro de qualquer escopo e em qualquer código PHP.
+
+=====================================================================================
+$_GET: retorna um array com todos os dados passados via GET em uma requisição
+$_POST: retorna um array com todos os dados passados via POST no cabeçalho da requisição
+$_REQUEST: retorna um array com todos os dados passados via GET ou POST
+=====================================================================================
+
+O cabeçalho da requisição pode ser encontrado no painel dos desenvolvedores do navegador dentro da aba "rede", por lá conseguiremos recuperar todas as requisições do tipo POST.
+
+É possível passar diretamente no código queries para a URL e acessar os dados via GET. Para isso, podemos dentro do action do formulário indicarmos o arquivo de destino dos dados e colocar, ao final, um "?" seguido dos dados desejados.
+
+=====================================================================================
+$_COOKIES: retorna um array com todos os cookies definidos dentro deste servidor
+$_FILES: retorna um array com todos os arquivos enviados para o servidor
+$_SESSION: retorna um array com todas as sessões e suas variáveis
+$_ENV: retorna um array com todas as variáveis de ambiente
+$_SERVER: retorna um array com todas as informações do servidor onde o PHP está rodando
+$GLOBALS: retorna um grande array com todas as informações a respeito de tudo, mesmo.
+=====================================================================================

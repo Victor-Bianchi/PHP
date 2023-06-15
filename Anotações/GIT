@@ -1,0 +1,27 @@
+git init é o comando que inicia em uma pasta determinada o repositório Git
+git add é o comando para adicionar um determinado arquivo para ser enviado (commitado)
+git commit é o comando para commitar para o repositório 
+
+git commit -a : commitar qualquer tipo de arquivo (todos)
+git commit -m : commitar com uma mensagem
+
+git remote add origin <link> : faz a conexão da pasta local para o repositório remoto
+
+git branch -M main : define como a branch padrão a "main"
+git branch : mostra em qual branch estamos
+
+git push -u origin main : faz o push para o repositório remoto
+git push --set-upstream origin beta : define, no repositório remoto, a branch criada
+
+git checkout -b "teste" : desvia o fluxo para um novo branch (sai do principal)
+git checkout main : desvia o fluxo para o branch main
+
+git merge beta : une e passa todo o código do branch de testes para o branch principal
+
+git clone <link> <name>: clona um repositório remoto para a sua máquina, podemos alterar o nome da pasta
+
+git clean -f : remove os arquivos do unwatched (será ignorado)
+
+git log : mostra o log de todas as movimentação do Git
+
+* É necessário ter uma PAT, um token antes de fazer o primeiro pull

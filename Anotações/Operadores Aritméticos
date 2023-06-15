@@ -1,0 +1,3 @@
+A saída do código em PHP: echo "2" + "2" é int(4). Isso ocorre pois o PHP converte os números em formato de String em números, coisa que não acontece com letras, e faz a "soma" dos valores Strings. O operador "+" diferente de outras linguagens não faz concatenação, faz apenas soma.
+
+Pode ser (PHP 7) que o PHP tente converter uma cadeia de textos em números mas, sem sucesso, zero será retornado. Neste PHP (antes da versão 8) se for achado algum número dentro da cadeia de caracteres (10 doláres) ele irá desconsiderar o texto e considerará o número apenas.

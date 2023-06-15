@@ -1,0 +1,15 @@
+Basicamente temos três estruturas por onde devemos passar para termos um envio de dados através de formulários: o computador do cliente, a Web e o servidor PHP. Os dados em si serão processados no servidor, por conta disso, devemos sempre definir qual o método e pra onde esses dados vão (method, action).
+
+Em uma caixa de texto, devemos ter o name e o value, sendo o name o "nome da variável" por onde poderemos recuperar o value.
+
+Temos: Método GET e POST
+	- GET: dados no URL (query string)
+	- POST: dados no body (cabeçalho do HTTP) da requisição
+
+Superglobais: $_GET, $_POST, $_REQUEST
+	- $_GET: somente captar dados enviados via GET
+	- $_POST: somente capta dados enviados via POST
+	- $_REQUEST: capta dados vindos de GET, POST e $_COOKIES
+		Portanto, o $_REQUEST é uma superglobal que une três outras
+
+-- href-"javascript:history.go(-1)"
