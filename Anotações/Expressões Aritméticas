@@ -23,3 +23,12 @@ A função pi() retorna o valor de pi (semelhante a constante interna M_PI)
 A função pow() faz o cálculo de uma potência
 A função sin(), cos() e tan() retorna os cálculos dos valores de seno, cosseno e tangente
 A função sqrt() retorna o valor da raiz quadrada de um determinado número
+A função rand() retorna um número aleatório entre um mínimo e um máximo (sem prot. a erros)
+A função mt_rand() retorna um número aleatório entre o minimo e um máximo (melhor)
+A função random_int() retorna um número aleatório entre o minimo e um máximo (criptografado)
+A função number_format($numero, 2, ",", ".") retorna um número formatado com base nas suas casas decimais e ainda troca vírgulas por pontos
+A função numfmt_create cria um padrão de formatação numérico
+A função numfmt_format_currency formata um número com base no padrão passado e na moeda passada
+
+* A partir do PHP 7.1 rand() usa a tecnologia do mt_rand()
+* Biblioteca Intl
