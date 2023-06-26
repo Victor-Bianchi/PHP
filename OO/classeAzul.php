@@ -16,4 +16,9 @@
         }
     }
 
+    function impress($txt) {
+        echo $txt;
+    }
+
+    $dado = "Eu sou um dado!";
 ?>
