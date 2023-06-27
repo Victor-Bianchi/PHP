@@ -52,6 +52,11 @@ header .logo {
     text-transform: uppercase;
 }
 
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
 nav.desktop ul {
     position: relative;
     top: 7px;
@@ -265,7 +270,7 @@ footer p {
     }
 
     nav.mobile ul {
-        display: block;
+        display: none;
         position: absolute;
         top: 70px;
         left: 0;

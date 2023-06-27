@@ -1,3 +1,4 @@
+<?php include('config.php')?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,7 +8,7 @@
     <meta name="keywords" content="Projeto, portfolio, site, landingpage">
     <meta name="author" content="Victor Bianchi">
     <title>Home - PE1</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,13 +17,13 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo left">Logomarca</div><!--logo-->
+            <div class="logo left"><a href="/">Logomarca</a></div><!--logo-->
             <nav class="desktop right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?> sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?>contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
             <nav class="mobile right">
@@ -30,10 +31,10 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?> sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?> servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH?> contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
             <div class="clear"></div>
@@ -61,7 +62,7 @@
             </div><!--w50-->
 
             <div class="w50 right">
-                <img class="right" src="./images/user.jpg" alt="imagem do usuário">
+                <img class="right" src="<?php echo INCLUDE_PATH?>images/user.jpg" alt="imagem do usuário">
             </div><!--w50-->
             <div class="clear"></div>
         </div><!--container-->
@@ -132,6 +133,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="./script/script.js"></script>
+    <script src="<?php echo INCLUDE_PATH?>script/script.js"></script>
 </body>
 </html>
