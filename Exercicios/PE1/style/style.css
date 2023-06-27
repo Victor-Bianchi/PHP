@@ -248,8 +248,15 @@ section.extras .title {
 }
 
 footer {
+    width: 100%;
     background-color: #313462;
     padding: 30px 0px;
+}
+
+footer.fixo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 footer p {
@@ -257,6 +264,27 @@ footer p {
     text-align: center;
     font-weight: 400;
     font-size: 15px;
+}
+
+div.e-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 40px 0px;
+}
+
+div.e-404 h1, div.e-404 p {
+    margin-bottom: 40px;
+}
+
+div.e-404 h1 {
+    font-size: 50px;
+}
+
+div.e-404 p {
+    font-size: 16px;
 }
 
 @media screen and (max-width: 700px) {

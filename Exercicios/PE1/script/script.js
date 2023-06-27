@@ -29,4 +29,13 @@ $(function(){
             listaMenu.slideToggle();
         }
     })
+
+    // Sistema de Rolagem
+
+    if($('target').length > 0) {
+        // Signifca que o elemento existe, onde o retorno de array > 0
+        var elemento = '.'+$('target').attr('target');
+        var divScroll = $(elemento).offset().top;
+        $('html, body').animate({'scrollTop': divScroll}, 2000);
+    }
 })
