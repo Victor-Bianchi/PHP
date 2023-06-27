@@ -7,7 +7,7 @@
     <meta name="keywords" content="Projeto, portfolio, site, landingpage">
     <meta name="author" content="Victor Bianchi">
     <title>Home - PE1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
             </div><!--w50-->
 
             <div class="w50 right">
-                <img class="right" src="./user.jpg" alt="imagem do usuário">
+                <img class="right" src="./images/user.jpg" alt="imagem do usuário">
             </div><!--w50-->
             <div class="clear"></div>
         </div><!--container-->
@@ -131,6 +131,7 @@
         </div>
     </footer>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
