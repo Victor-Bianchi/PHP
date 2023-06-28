@@ -19,6 +19,7 @@
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';
         echo "<target target=\"$url\">";
     ?>
+
     <header>
         <div class="container">
             <div class="logo left"><a href="<?php echo INCLUDE_PATH?>">Logomarca</a></div><!--logo-->

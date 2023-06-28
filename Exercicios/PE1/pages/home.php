@@ -1,9 +1,26 @@
+<?php 
+    if(isset($_POST['sbmt']) && $_POST['identificador'] == 'form_home') { # isso evita que outros formulários sejam carregados sem necessidade
+        if($_POST['email'] !== '') {
+            # Para fazer validações de e-mail podemos usar expressões regulares ou funções nativas do PHP, como a filter_var
+            $email = $_POST['email'];
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                echo '<script>alert("É um e-mail válido!")</script>';
+            } else {
+                echo '<script>alert("É um e-mail inválido!")</script>';
+            }
+        } else {
+            echo '<script>alert("Campos vazios não são permitidos")</script>';
+        }
+    }
+?>
+
 <section class="banner-principal">
         <div class="overlay"></div>
         <div class="container">
-            <form>
+            <form method="post">
                 <h2>Qual o seu melhor e-mail?</h2>
                 <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                <input type="hidden" name="identificador" value="form_home">
                 <input type="submit" value="Cadastrar" name="sbmt">
             </form>
         </div><!--container-->
