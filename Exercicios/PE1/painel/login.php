@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,26 @@
 </head>
 <body>
     <div class="box-login">
+        <?php 
+            if(isset($_POST['sbmt'])) {
+                $user = $_POST['user'];
+                $passwd = $_POST['passwd'];
+                $sql = MySQL::connect()->prepare('SELECT * FROM tb_admin_usuarios WHERE user = ? AND password = ?');
+                $sql->execute([$user, $passwd]);
+
+                if($sql->rowCount() == 1) {
+                    $_SESSION['login'] = true;
+                    $_SESSION['user'] = $user;
+                    $_SESSION['password'] = $passwd;
+                    header('Location: '.INCLUDE_PATH_PAINEL);
+                    die();
+                } else {
+                    die("Usuário ou senha incorretos");
+                }
+            }
+        ?>
         <h2>Login</h2>
-        <form action="">
+        <form method="post">
             <input type="text" name="user" placeholder="username" required>
             <input type="password" name="passwd" placeholder="password" required>
             <input type="submit" name="sbmt" value="Entrar">

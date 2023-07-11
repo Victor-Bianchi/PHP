@@ -11,6 +11,10 @@
     
     define('INCLUDE_PATH', 'http://localhost/PHP/Exercicios/PE1/'); # O path (caminho) principal do nosso sistema
     define('INCLUDE_PATH_PAINEL', INCLUDE_PATH.'painel/');
+    define('HOST', 'localhost');
+    define('DATABASE', 'pe1');
+    define('USER', 'root');
+    define('PASSWORD', '');
 
     /**
      * function MyAutoload($class) {

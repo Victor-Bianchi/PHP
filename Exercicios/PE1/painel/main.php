@@ -1,1 +1,1 @@
-Estou logado
+<h2>Bem-vindo ao Painel de Controle!</h2>
