@@ -48,7 +48,12 @@
 
     <?php 
         if(file_exists('pages/'.$url.'.php')) {
-            include('pages/'.$url.'.php');
+            if($url == '404') {
+                $e404 = true;
+                include('pages/'.$url.'.php');
+            } else {
+                include('pages/'.$url.'.php');
+            }
         } else if($url !== "depoimentos" && $url !== "servicos") {
             $e404 = true;
             include('pages/404.php');
