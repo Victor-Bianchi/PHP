@@ -10,6 +10,34 @@ html, body {
     background-color: rgb(225, 225, 225);
 }
 
+.center {
+    width: 100%;
+    padding: 0px 2%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 49%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*PÁGINA DE LOGIN*/
+
 .box-login {
     max-width: 600px;
     width: 95%;
@@ -47,4 +75,194 @@ html, body {
     background-color: #00bfa5;
     color: white;
     border: 0;
+}
+
+/*PAINEL*/
+
+div.menu-aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    float: left;
+    overflow-y: auto;
+    background-color: #607d8b;
+    padding: 10px 0px;
+}
+
+div.box-usuario {
+    text-align: center;
+
+}
+
+div.box-usuario .avatar-usuario {
+    display: inline-block;
+    text-align: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2f3d42;
+}
+
+div.box-usuario .avatar-usuario i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-align: left;
+}
+
+.nome-usuario {
+    text-align: center;
+}
+
+.nome-usuario p {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.nome-usuario p:nth-child(2) {
+    margin-top: 2px;
+}
+
+div.menu-menu {
+    margin-top: 30px;
+}
+
+div.menu-menu p {
+    padding: 10px;
+    border-bottom: 2px solid #2f3d42;
+    font-weight: normal;
+}
+
+div.menu-menu p:nth-child(1) {
+    border-top: 2px solid #2f3d42;
+}
+
+div.menu-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: #1f292c;
+    font-weight: bold;
+}
+
+.title-menu {
+    background-color: #2f3d42;
+    font-weight: normal;
+    color: white;
+}
+
+header {
+    position: relative;
+    left: 15%;
+    width: 85%;
+    padding: 10px 0px;
+    background-color: #78909c;
+}
+
+div.logout {
+    float: right;
+}
+
+div.logout a{
+    color: white;
+    font-size: 23px;
+}
+
+div.menu-btn {
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+    float: left;
+}
+
+/*CONTENT*/
+
+div.content {
+    position: relative;
+    left: 15%;
+    width: 85%;
+    padding: 10px;
+}
+
+div.box-content {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.title {
+    padding-left: 10px;
+}
+
+div.box-wraper {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+div.box-single {
+    display: inline-block;
+    width: calc((100% / 3) - 10px);
+    padding: 10px;
+    text-align: left;
+}
+
+div.box-single:nth-child(1) {
+    background-color: #fbc02d;
+}
+
+div.box-single:nth-child(2) {
+    background-color: #e64a19;
+}
+
+div.box-single:nth-child(3) {
+    background-color: #388e3c;
+}
+
+div.box-single h2 {
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+div.box-single h2,
+div.box-single p {
+    color: white;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1000px) {
+    div.menu-aside {
+        display: none;
+    }
+
+    header {
+        position: static;
+        width: 100%;
+    }
+
+    div.content {
+        position: static;
+        width: 100%;
+    }
+
+    div.box-single {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    div.title {
+        text-align: center;
+    }
 }

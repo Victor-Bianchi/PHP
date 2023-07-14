@@ -15,16 +15,4 @@
     define('DATABASE', 'pe1');
     define('USER', 'root');
     define('PASSWORD', '');
-
-    /**
-     * function MyAutoload($class) {
-        $class = str_replace('\\', '/', $class);
-        if(file_exists('classes/'.$class.'.php')) {
-            echo "achei!";
-            include('classes/'.$class.'.php');
-        } else {
-            echo "N achei";
-        }
-};
-     */
 ?>
